@@ -63,7 +63,7 @@ module.exports = {
             res.status(200).send({
                 message:"berhasil dapat blog",
                 data:result,
-                totol_data:count,
+                total_data:count,
                 per_page:perPage,
                 current_page:currentPage
             })

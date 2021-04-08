@@ -12,6 +12,11 @@ const applyValidatorBlog=[
 ]
 
 router.post("/post",applyValidatorBlog,blogControllers.createBlogPost)
+router.get("/posts",blogControllers.getAllBlogPost)
+router.get("/post/:postId",blogControllers.getBlogPostById)
+router.put("/post/:postId",applyValidatorBlog,blogControllers.updateBlogPost)
+router.delete("/post/:postId",blogControllers.deleteBlogPostById)
+
 
 
 module.exports=router
